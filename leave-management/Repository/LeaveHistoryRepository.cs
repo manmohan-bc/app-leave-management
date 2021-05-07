@@ -41,6 +41,11 @@ namespace leave_management.Repository
             return LeaveHistory;
         }
 
+        public bool IsExists(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Save()
         {
             var changes = _db.SaveChanges();

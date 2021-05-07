@@ -38,6 +38,11 @@ namespace leave_management.Repository
             return leaveAllocation;
         }
 
+        public bool IsExists(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Save()
         {
             var changes = _db.SaveChanges();

@@ -18,7 +18,7 @@ namespace leave_management.Repository
         public bool Create(LeaveType entity)
         {
             _db.LeaveTypes.Add(entity);
-            return true;
+            return Save();
         }
 
         public bool Delete(LeaveType entity)
@@ -42,6 +42,12 @@ namespace leave_management.Repository
         public ICollection<LeaveType> GetEmployeesByLeaveType(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public bool IsExists(int id)
+        {
+            var exists = _db.LeaveTypes.Any(q => q.Id == id);
+            return exists;
         }
 
         public bool Save()

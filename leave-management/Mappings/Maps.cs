@@ -11,8 +11,7 @@ namespace leave_management.Mappings
     {
         public Maps()
         {
-            CreateMap<LeaveType, Models.DetailsLeaveTypeViewModel>().ReverseMap();
-            CreateMap<LeaveType, Models.CreateLaveTypeViewModel>().ReverseMap();
+            CreateMap<LeaveType, Models.LeaveTypeViewModel>().ReverseMap();            
 
             CreateMap<LeaveHistory, Models.LeaveHistoryViewModel>().ReverseMap();
             
