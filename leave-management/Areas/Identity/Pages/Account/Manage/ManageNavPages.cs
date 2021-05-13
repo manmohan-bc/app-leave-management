@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using leave_management.Data;
 
 namespace leave_management.Areas.Identity.Pages.Account.Manage
 {
